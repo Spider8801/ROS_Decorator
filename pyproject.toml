@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ros2_action_decorator"
+version = "0.1.0"
+description = "A Python decorator that generates ROS2 messages, actions, and a C++ action server."
+authors = [{ name = "Harshita", email = "harshitaarya@ds0.zefr.com" }]
+license = { text = "MIT" }
+dependencies = [
+    "setuptools",
+    "colcon-common-extensions",
+    "pytest",
+]
+
+[tool.setuptools]
+packages = ["ros2_action_decorator"]
